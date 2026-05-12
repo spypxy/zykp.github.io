@@ -139,12 +139,12 @@ footer{background:#2d5a43;color:#fff;text-align:center;padding:30px 0;margin-top
 <div class="category-header">
 <h2 class="section-title">科普栏目</h2>
 <div class="category-list">
-<a href="#" class="category-item active">全部</a>
-<a href="#" class="category-item">安全使用中药</a>
-<a href="#" class="category-item">女性安全用药</a>
-<a href="#" class="category-item">儿童安全用药</a>
-<a href="#" class="category-item">老年养生药膳</a>
-<a href="#" class="category-item">饮食保健指导</a>
+<a href="#" class="category-item active" data-category="全部">全部</a>
+<a href="#" class="category-item" data-category="安全使用中药">安全使用中药</a>
+<a href="#" class="category-item" data-category="女性安全用药">女性安全用药</a>
+<a href="#" class="category-item" data-category="儿童安全用药">儿童安全用药</a>
+<a href="#" class="category-item" data-category="老年养生药膳">老年养生药膳</a>
+<a href="#" class="category-item" data-category="饮食保健指导">饮食保健指导</a>
 </div>
 </div>
 </section>
@@ -267,7 +267,7 @@ footer{background:#2d5a43;color:#fff;text-align:center;padding:30px 0;margin-top
 <img src="川贝秋梨膏.png" alt="川贝秋梨膏">
 </a>
 <div class="video-title">川贝秋梨膏</div>
-<div class="video-tag">老年养生药膳 · 87752次播放</div>
+<div class="video-tag">安全使用中药 · 32145次播放</div>
 </div>
 <div class="video-card">
 <a href="西红花.html" target="_blank">
@@ -361,6 +361,13 @@ footer{background:#2d5a43;color:#fff;text-align:center;padding:30px 0;margin-top
 <div class="video-tag">老年养生药膳 · 112541次播放</div>
 </div>
 <div class="video-card">
+<a href="川贝秋梨膏.html" target="_blank">
+<img src="川贝秋梨膏.png" alt="川贝秋梨膏">
+</a>
+<div class="video-title">川贝秋梨膏</div>
+<div class="video-tag">老年养生药膳 · 87752次播放</div>
+</div>
+<div class="video-card">
 <a href="传统智慧中的药膳食养.html" target="_blank">
 <img src="传统智慧中的药膳食养.png" alt="传统智慧中的药膳食养">
 </a>
@@ -401,7 +408,7 @@ footer{background:#2d5a43;color:#fff;text-align:center;padding:30px 0;margin-top
 <footer>
 <p>© 2020 药安食养 | 用药安全与饮食养生科普网</p>
 <p>未经授权禁止转载、摘编、复制或建立镜像，如有违反，追究法律责任。 </p>
-<p>对本站有任何建议、意见或投诉，请邮件联系support@zykp.cc</p>
+<p>对本站有任何建议、意见或投诉，请邮件联系spypxy@github.io</p>
 <p>版权所有 @药安食养</p>
 </footer>
 
@@ -468,89 +475,90 @@ document.addEventListener('DOMContentLoaded', function() {
             { title: '婴幼儿疫苗接种注意事项', cover: '婴幼儿疫苗接种注意事项.png', type: '儿童安全用药', play: '81234', url: '婴幼儿疫苗接种注意事项.html' },
             { title: '六个必备的儿童用药常识', cover: '六个必备的儿童用药常识.png', type: '儿童安全用药', play: '91112', url: '六个必备的儿童用药常识.html' },
             { title: '儿童用药注意事项', cover: '儿童用药注意事项.png', type: '儿童安全用药', play: '83517', url: '儿童用药注意事项.html' },
-            { title: '儿童用药五大误区', cover: '儿童用药五大误区.png', type: '儿童安全用药', play: '78921', url: '儿童用药五大误区.html' },
-            { title: '哺乳用药慎选择，母婴健康最重要', cover: '哺乳用药慎选择，母婴健康最重要.png', type: '女性安全用药', play: '52345', url: '哺乳用药慎选择，母婴健康最重要.html' },
-            { title: '备孕科学补叶酸，健康好孕有保障', cover: '备孕科学补叶酸，健康好孕有保障.png', type: '女性安全用药', play: '65432', url: '备孕科学补叶酸，健康好孕有保障.html' },
-            { title: '孕期用药需谨慎，合理选择是关键', cover: '孕期用药需谨慎，合理选择是关键.png', type: '女性安全用药', play: '78921', url: '孕期用药需谨慎，合理选择是关键.html' },
-            { title: '孕期呕吐别忽视，正确防治保平安', cover: '孕期呕吐别忽视，正确防治保平安.png', type: '女性安全用药', play: '62345', url: '孕期呕吐别忽视，正确防治保平安.html' },
-            { title: '分娩疼痛莫恐慌，安全镇痛保健康', cover: '分娩疼痛莫恐慌，安全镇痛保健康.png', type: '女性安全用药', play: '58921', url: '分娩疼痛莫恐慌，安全镇痛保健康.html' },
-            { title: '服用药物调经期，谨慎选择勿随意', cover: '服用药物调经期，谨慎选择勿随意.png', type: '女性安全用药', play: '54321', url: '服用药物调经期，谨慎选择勿随意.html' },
-            { title: '难言之隐药治疗，处理得当解困扰', cover: '难言之隐药治疗，处理得当解困扰.png', type: '女性安全用药', play: '48921', url: '难言之隐药治疗，处理得当解困扰.html' },
-            { title: '理性应对更年期，科学使用性激素', cover: '理性应对更年期，科学使用性激素.png', type: '女性安全用药', play: '45678', url: '理性应对更年期，科学使用性激素.html' },
-            { title: '子宫颈癌可预防，接种疫苗筑防线', cover: '子宫颈癌可预防，接种疫苗筑防线.png', type: '女性安全用药', play: '67890', url: '子宫颈癌可预防，接种疫苗筑防线.html' },
-            { title: '药物避孕勿盲目，科学使用才安全', cover: '药物避孕勿盲目，科学使用才安全.png', type: '女性安全用药', play: '51234', url: '药物避孕勿盲目，科学使用才安全.html' },
-            { title: '何首乌', cover: '何首乌.png', type: '安全使用中药', play: '45678', url: '何首乌.html' },
-            { title: '川贝母', cover: '川贝母.png', type: '安全使用中药', play: '38921', url: '川贝母.html' },
-            { title: '西红花', cover: '西红花.png', type: '安全使用中药', play: '28921', url: '西红花.html' },
-            { title: '胖大海', cover: '胖大海.png', type: '安全使用中药', play: '35678', url: '胖大海.html' },
-            { title: '附子', cover: '附子.png', type: '安全使用中药', play: '24321', url: '附子.html' },
-            { title: '番泻叶', cover: '番泻叶.png', type: '安全使用中药', play: '29876', url: '番泻叶.html' },
-            { title: '山楂麦芽茶', cover: '山楂麦芽茶.png', type: '老年养生药膳', play: '54321', url: '山楂麦芽茶.html' },
-            { title: '玉竹瘦肉汤', cover: '玉竹瘦肉汤.png', type: '老年养生药膳', play: '48921', url: '玉竹瘦肉汤.html' },
-            { title: '良姜炖鸡块', cover: '良姜炖鸡块.png', type: '老年养生药膳', play: '43215', url: '良姜炖鸡块.html' },
-            { title: '白术猪肚粥', cover: '白术猪肚粥.png', type: '老年养生药膳', play: '38921', url: '白术猪肚粥.html' },
-            { title: '苏子麻仁粥', cover: '苏子麻仁粥.png', type: '老年养生药膳', play: '35678', url: '苏子麻仁粥.html' },
-            { title: '龙眼枣仁养心粥', cover: '龙眼枣仁养心粥.jpg', type: '老年养生药膳', play: '32145', url: '龙眼枣仁养心粥.html' },
-            { title: '银杞明目汤', cover: '银杞明目汤.png', type: '老年养生药膳', play: '28921', url: '银杞明目汤.html' },
-            { title: '蜂蜜决明茶', cover: '蜂蜜决明茶.png', type: '老年养生药膳', play: '67890', url: '蜂蜜决明茶.html' },
-            { title: '莲子荷叶蒸湖鸭', cover: '莲子荷叶蒸湖鸭.jpg', type: '老年养生药膳', play: '45678', url: '莲子荷叶蒸湖鸭.html' },
-            { title: '传统智慧中的药膳食养', cover: '传统智慧中的药膳食养.png', type: '饮食保健指导', play: '52345', url: '传统智慧中的药膳食养.html' },
-            { title: '经典医药古籍中的药膳食疗方', cover: '经典医药古籍中的药膳食疗方.png', type: '饮食保健指导', play: '48921', url: '经典医药古籍中的药膳食疗方.html' },
-            { title: '药膳食养的理论基础及基本技能', cover: '药膳食养的理论基础及基本技能.png', type: '饮食保健指导', play: '56789', url: '药膳食养的理论基础及基本技能.html' },
-            { title: '现代健康管理视角下的药膳食养应用', cover: '现代健康管理视角下的药膳食养应用.png', type: '饮食保健指导', play: '42345', url: '现代健康管理视角下的药膳食养应用.html' },
-            { title: '食药物质相关法律法规及使用注意', cover: '食药物质相关法律法规及使用注意.png', type: '饮食保健指导', play: '38921', url: '食药物质相关法律法规及使用注意.html' }
+            { title: '儿童用药五大误区', cover: '儿童用药五大误区.png', type: '儿童安全用药', play: '98641', url: '儿童用药五大误区.html' },
+            { title: '哺乳用药慎选择，母婴健康最重要', cover: '哺乳用药慎选择，母婴健康最重要.png', type: '女性安全用药', play: '84321', url: '哺乳用药慎选择，母婴健康最重要.html' },
+            { title: '备孕科学补叶酸，健康好孕有保障', cover: '备孕科学补叶酸，健康好孕有保障.png', type: '女性安全用药', play: '96122', url: '备孕科学补叶酸，健康好孕有保障.html' },
+            { title: '孕期用药需谨慎，合理选择是关键', cover: '孕期用药需谨慎，合理选择是关键.png', type: '女性安全用药', play: '87131', url: '孕期用药需谨慎，合理选择是关键.html' },
+            { title: '孕期呕吐别忽视，正确防治保平安', cover: '孕期呕吐别忽视，正确防治保平安.png', type: '女性安全用药', play: '96551', url: '孕期呕吐别忽视，正确防治保平安.html' },
+            { title: '分娩疼痛莫恐慌，安全镇痛保健康', cover: '分娩疼痛莫恐慌，安全镇痛保健康.png', type: '女性安全用药', play: '94112', url: '分娩疼痛莫恐慌，安全镇痛保健康.html' },
+            { title: '服用药物调经期，谨慎选择勿随意', cover: '服用药物调经期，谨慎选择勿随意.png', type: '女性安全用药', play: '83158', url: '服用药物调经期，谨慎选择勿随意.html' },
+            { title: '难言之隐药治疗，处理得当解困扰', cover: '难言之隐药治疗，处理得当解困扰.png', type: '女性安全用药', play: '84121', url: '难言之隐药治疗，处理得当解困扰.html' },
+            { title: '理性应对更年期，科学使用性激素', cover: '理性应对更年期，科学使用性激素.png', type: '女性安全用药', play: '91122', url: '理性应对更年期，科学使用性激素.html' },
+            { title: '子宫颈癌可预防，接种疫苗筑防线', cover: '子宫颈癌可预防，接种疫苗筑防线.png', type: '女性安全用药', play: '89332', url: '子宫颈癌可预防，接种疫苗筑防线.html' },
+            { title: '药物避孕勿盲目，科学使用才安全', cover: '药物避孕勿盲目，科学使用才安全.png', type: '女性安全用药', play: '71112', url: '药物避孕勿盲目，科学使用才安全.html' },
+            { title: '何首乌', cover: '何首乌.png', type: '安全使用中药', play: '79122', url: '何首乌.html' },
+            { title: '川贝母', cover: '川贝母.png', type: '安全使用中药', play: '79144', url: '川贝母.html' },
+            { title: '西红花', cover: '西红花.png', type: '安全使用中药', play: '81548', url: '西红花.html' },
+            { title: '胖大海', cover: '胖大海.png', type: '安全使用中药', play: '87771', url: '胖大海.html' },
+            { title: '附子', cover: '附子.png', type: '安全使用中药', play: '79331', url: '附子.html' },
+            { title: '番泻叶', cover: '番泻叶.png', type: '安全使用中药', play: '121847', url: '番泻叶.html' },
+            { title: '山楂麦芽茶', cover: '山楂麦芽茶.png', type: '老年养生药膳', play: '91123', url: '山楂麦芽茶.html' },
+            { title: '玉竹瘦肉汤', cover: '玉竹瘦肉汤.png', type: '老年养生药膳', play: '77173', url: '玉竹瘦肉汤.html' },
+            { title: '良姜炖鸡块', cover: '良姜炖鸡块.png', type: '老年养生药膳', play: '96114', url: '良姜炖鸡块.html' },
+            { title: '白术猪肚粥', cover: '白术猪肚粥.png', type: '老年养生药膳', play: '94722', url: '白术猪肚粥.html' },
+            { title: '苏子麻仁粥', cover: '苏子麻仁粥.png', type: '老年养生药膳', play: '98810', url: '苏子麻仁粥.html' },
+            { title: '龙眼枣仁养心粥', cover: '龙眼枣仁养心粥.jpg', type: '老年养生药膳', play: '93751', url: '龙眼枣仁养心粥.html' },
+            { title: '银杞明目汤', cover: '银杞明目汤.png', type: '老年养生药膳', play: '73744', url: '银杞明目汤.html' },
+            { title: '蜂蜜决明茶', cover: '蜂蜜决明茶.png', type: '老年养生药膳', play: '91425', url: '蜂蜜决明茶.html' },
+            { title: '莲子荷叶蒸湖鸭', cover: '莲子荷叶蒸湖鸭.jpg', type: '老年养生药膳', play: '112541', url: '莲子荷叶蒸湖鸭.html' },
+            { title: '川贝秋梨膏', cover: '川贝秋梨膏.png', type: '老年养生药膳', play: '87752', url: '川贝秋梨膏.html' },
+            { title: '传统智慧中的药膳食养', cover: '传统智慧中的药膳食养.png', type: '饮食保健指导', play: '81158', url: '传统智慧中的药膳食养.html' },
+            { title: '经典医药古籍中的药膳食疗方', cover: '经典医药古籍中的药膳食疗方.png', type: '饮食保健指导', play: '132545', url: '经典医药古籍中的药膳食疗方.html' },
+            { title: '药膳食养的理论基础及基本技能', cover: '药膳食养的理论基础及基本技能.png', type: '饮食保健指导', play: '94729', url: '药膳食养的理论基础及基本技能.html' },
+            { title: '现代健康管理视角下的药膳食养应用', cover: '现代健康管理视角下的药膳食养应用.png', type: '饮食保健指导', play: '115428', url: '现代健康管理视角下的药膳食养应用.html' },
+            { title: '食药物质相关法律法规及使用注意', cover: '食药物质相关法律法规及使用注意.png', type: '饮食保健指导', play: '129952', url: '食药物质相关法律法规及使用注意.html' }
         ],
         '安全使用中药': [
-            { title: '何首乌', cover: '何首乌.png', type: '安全使用中药', play: '45678', url: '何首乌.html' },
-            { title: '川贝母', cover: '川贝母.png', type: '安全使用中药', play: '38921', url: '川贝母.html' },
-            { title: '西红花', cover: '西红花.png', type: '安全使用中药', play: '28921', url: '西红花.html' },
-            { title: '胖大海', cover: '胖大海.png', type: '安全使用中药', play: '35678', url: '胖大海.html' },
-            { title: '附子', cover: '附子.png', type: '安全使用中药', play: '24321', url: '附子.html' },
-            { title: '番泻叶', cover: '番泻叶.png', type: '安全使用中药', play: '29876', url: '番泻叶.html' }
+            { title: '何首乌', cover: '何首乌.png', type: '安全使用中药', play: '79122', url: '何首乌.html' },
+            { title: '川贝母', cover: '川贝母.png', type: '安全使用中药', play: '79144', url: '川贝母.html' },
+            { title: '西红花', cover: '西红花.png', type: '安全使用中药', play: '81548', url: '西红花.html' },
+            { title: '胖大海', cover: '胖大海.png', type: '安全使用中药', play: '87771', url: '胖大海.html' },
+            { title: '附子', cover: '附子.png', type: '安全使用中药', play: '79331', url: '附子.html' },
+            { title: '番泻叶', cover: '番泻叶.png', type: '安全使用中药', play: '121847', url: '番泻叶.html' }
         ],
         '女性安全用药': [
-            { title: '哺乳用药慎选择，母婴健康最重要', cover: '哺乳用药慎选择，母婴健康最重要.png', type: '女性安全用药', play: '52345', url: '哺乳用药慎选择，母婴健康最重要.html' },
-            { title: '备孕科学补叶酸，健康好孕有保障', cover: '备孕科学补叶酸，健康好孕有保障.png', type: '女性安全用药', play: '65432', url: '备孕科学补叶酸，健康好孕有保障.html' },
-            { title: '孕期用药需谨慎，合理选择是关键', cover: '孕期用药需谨慎，合理选择是关键.png', type: '女性安全用药', play: '78921', url: '孕期用药需谨慎，合理选择是关键.html' },
-            { title: '孕期呕吐别忽视，正确防治保平安', cover: '孕期呕吐别忽视，正确防治保平安.png', type: '女性安全用药', play: '62345', url: '孕期呕吐别忽视，正确防治保平安.html' },
-            { title: '分娩疼痛莫恐慌，安全镇痛保健康', cover: '分娩疼痛莫恐慌，安全镇痛保健康.png', type: '女性安全用药', play: '58921', url: '分娩疼痛莫恐慌，安全镇痛保健康.html' },
-            { title: '服用药物调经期，谨慎选择勿随意', cover: '服用药物调经期，谨慎选择勿随意.png', type: '女性安全用药', play: '54321', url: '服用药物调经期，谨慎选择勿随意.html' },
-            { title: '难言之隐药治疗，处理得当解困扰', cover: '难言之隐药治疗，处理得当解困扰.png', type: '女性安全用药', play: '48921', url: '难言之隐药治疗，处理得当解困扰.html' },
-            { title: '理性应对更年期，科学使用性激素', cover: '理性应对更年期，科学使用性激素.png', type: '女性安全用药', play: '45678', url: '理性应对更年期，科学使用性激素.html' },
-            { title: '子宫颈癌可预防，接种疫苗筑防线', cover: '子宫颈癌可预防，接种疫苗筑防线.png', type: '女性安全用药', play: '67890', url: '子宫颈癌可预防，接种疫苗筑防线.html' },
-            { title: '药物避孕勿盲目，科学使用才安全', cover: '药物避孕勿盲目，科学使用才安全.png', type: '女性安全用药', play: '51234', url: '药物避孕勿盲目，科学使用才安全.html' }
+            { title: '哺乳用药慎选择，母婴健康最重要', cover: '哺乳用药慎选择，母婴健康最重要.png', type: '女性安全用药', play: '84321', url: '哺乳用药慎选择，母婴健康最重要.html' },
+            { title: '备孕科学补叶酸，健康好孕有保障', cover: '备孕科学补叶酸，健康好孕有保障.png', type: '女性安全用药', play: '96122', url: '备孕科学补叶酸，健康好孕有保障.html' },
+            { title: '孕期用药需谨慎，合理选择是关键', cover: '孕期用药需谨慎，合理选择是关键.png', type: '女性安全用药', play: '87131', url: '孕期用药需谨慎，合理选择是关键.html' },
+            { title: '孕期呕吐别忽视，正确防治保平安', cover: '孕期呕吐别忽视，正确防治保平安.png', type: '女性安全用药', play: '96551', url: '孕期呕吐别忽视，正确防治保平安.html' },
+            { title: '分娩疼痛莫恐慌，安全镇痛保健康', cover: '分娩疼痛莫恐慌，安全镇痛保健康.png', type: '女性安全用药', play: '94112', url: '分娩疼痛莫恐慌，安全镇痛保健康.html' },
+            { title: '服用药物调经期，谨慎选择勿随意', cover: '服用药物调经期，谨慎选择勿随意.png', type: '女性安全用药', play: '83158', url: '服用药物调经期，谨慎选择勿随意.html' },
+            { title: '难言之隐药治疗，处理得当解困扰', cover: '难言之隐药治疗，处理得当解困扰.png', type: '女性安全用药', play: '84121', url: '难言之隐药治疗，处理得当解困扰.html' },
+            { title: '理性应对更年期，科学使用性激素', cover: '理性应对更年期，科学使用性激素.png', type: '女性安全用药', play: '91122', url: '理性应对更年期，科学使用性激素.html' },
+            { title: '子宫颈癌可预防，接种疫苗筑防线', cover: '子宫颈癌可预防，接种疫苗筑防线.png', type: '女性安全用药', play: '89332', url: '子宫颈癌可预防，接种疫苗筑防线.html' },
+            { title: '药物避孕勿盲目，科学使用才安全', cover: '药物避孕勿盲目，科学使用才安全.png', type: '女性安全用药', play: '71112', url: '药物避孕勿盲目，科学使用才安全.html' }
         ],
         '儿童安全用药': [
             { title: '婴幼儿疫苗接种注意事项', cover: '婴幼儿疫苗接种注意事项.png', type: '儿童安全用药', play: '81234', url: '婴幼儿疫苗接种注意事项.html' },
             { title: '六个必备的儿童用药常识', cover: '六个必备的儿童用药常识.png', type: '儿童安全用药', play: '91112', url: '六个必备的儿童用药常识.html' },
             { title: '儿童用药注意事项', cover: '儿童用药注意事项.png', type: '儿童安全用药', play: '83517', url: '儿童用药注意事项.html' },
-            { title: '儿童用药五大误区', cover: '儿童用药五大误区.png', type: '儿童安全用药', play: '78921', url: '儿童用药五大误区.html' }
+            { title: '儿童用药五大误区', cover: '儿童用药五大误区.png', type: '儿童安全用药', play: '98641', url: '儿童用药五大误区.html' }
         ],
         '老年养生药膳': [
-            { title: '山楂麦芽茶', cover: '山楂麦芽茶.png', type: '老年养生药膳', play: '54321', url: '山楂麦芽茶.html' },
-            { title: '玉竹瘦肉汤', cover: '玉竹瘦肉汤.png', type: '老年养生药膳', play: '48921', url: '玉竹瘦肉汤.html' },
-            { title: '良姜炖鸡块', cover: '良姜炖鸡块.png', type: '老年养生药膳', play: '43215', url: '良姜炖鸡块.html' },
-            { title: '白术猪肚粥', cover: '白术猪肚粥.png', type: '老年养生药膳', play: '38921', url: '白术猪肚粥.html' },
-            { title: '苏子麻仁粥', cover: '苏子麻仁粥.png', type: '老年养生药膳', play: '35678', url: '苏子麻仁粥.html' },
-            { title: '龙眼枣仁养心粥', cover: '龙眼枣仁养心粥.jpg', type: '老年养生药膳', play: '32145', url: '龙眼枣仁养心粥.html' },
-            { title: '银杞明目汤', cover: '银杞明目汤.png', type: '老年养生药膳', play: '28921', url: '银杞明目汤.html' }
-            { title: '蜂蜜决明茶', cover: '蜂蜜决明茶.png', type: '老年养生药膳', play: '67890', url: '蜂蜜决明茶.html' },
-            { title: '莲子荷叶蒸湖鸭', cover: '莲子荷叶蒸湖鸭.jpg', type: '老年养生药膳', play: '45678', url: '莲子荷叶蒸湖鸭.html' },
-            { title: '川贝秋梨膏', cover: '川贝秋梨膏.png', type: '老年养生药膳', play: '32145', url: '川贝秋梨膏.html' },
+            { title: '山楂麦芽茶', cover: '山楂麦芽茶.png', type: '老年养生药膳', play: '91123', url: '山楂麦芽茶.html' },
+            { title: '玉竹瘦肉汤', cover: '玉竹瘦肉汤.png', type: '老年养生药膳', play: '77173', url: '玉竹瘦肉汤.html' },
+            { title: '良姜炖鸡块', cover: '良姜炖鸡块.png', type: '老年养生药膳', play: '96114', url: '良姜炖鸡块.html' },
+            { title: '白术猪肚粥', cover: '白术猪肚粥.png', type: '老年养生药膳', play: '94722', url: '白术猪肚粥.html' },
+            { title: '苏子麻仁粥', cover: '苏子麻仁粥.png', type: '老年养生药膳', play: '98810', url: '苏子麻仁粥.html' },
+            { title: '龙眼枣仁养心粥', cover: '龙眼枣仁养心粥.jpg', type: '老年养生药膳', play: '93751', url: '龙眼枣仁养心粥.html' },
+            { title: '银杞明目汤', cover: '银杞明目汤.png', type: '老年养生药膳', play: '73744', url: '银杞明目汤.html' },
+            { title: '蜂蜜决明茶', cover: '蜂蜜决明茶.png', type: '老年养生药膳', play: '91425', url: '蜂蜜决明茶.html' },
+            { title: '莲子荷叶蒸湖鸭', cover: '莲子荷叶蒸湖鸭.jpg', type: '老年养生药膳', play: '112541', url: '莲子荷叶蒸湖鸭.html' },
+            { title: '川贝秋梨膏', cover: '川贝秋梨膏.png', type: '老年养生药膳', play: '87752', url: '川贝秋梨膏.html' }
         ],
         '饮食保健指导': [
-            { title: '传统智慧中的药膳食养', cover: '传统智慧中的药膳食养.png', type: '饮食保健指导', play: '52345', url: '传统智慧中的药膳食养.html' },
-            { title: '经典医药古籍中的药膳食疗方', cover: '经典医药古籍中的药膳食疗方.png', type: '饮食保健指导', play: '48921', url: '经典医药古籍中的药膳食疗方.html' },
-            { title: '药膳食养的理论基础及基本技能', cover: '药膳食养的理论基础及基本技能.png', type: '饮食保健指导', play: '56789', url: '药膳食养的理论基础及基本技能.html' },
-            { title: '现代健康管理视角下的药膳食养应用', cover: '现代健康管理视角下的药膳食养应用.png', type: '饮食保健指导', play: '42345', url: '现代健康管理视角下的药膳食养应用.html' },
-            { title: '食药物质相关法律法规及使用注意', cover: '食药物质相关法律法规及使用注意.png', type: '饮食保健指导', play: '38921', url: '食药物质相关法律法规及使用注意.html' }
+            { title: '传统智慧中的药膳食养', cover: '传统智慧中的药膳食养.png', type: '饮食保健指导', play: '81158', url: '传统智慧中的药膳食养.html' },
+            { title: '经典医药古籍中的药膳食疗方', cover: '经典医药古籍中的药膳食疗方.png', type: '饮食保健指导', play: '132545', url: '经典医药古籍中的药膳食疗方.html' },
+            { title: '药膳食养的理论基础及基本技能', cover: '药膳食养的理论基础及基本技能.png', type: '饮食保健指导', play: '94729', url: '药膳食养的理论基础及基本技能.html' },
+            { title: '现代健康管理视角下的药膳食养应用', cover: '现代健康管理视角下的药膳食养应用.png', type: '饮食保健指导', play: '115428', url: '现代健康管理视角下的药膳食养应用.html' },
+            { title: '食药物质相关法律法规及使用注意', cover: '食药物质相关法律法规及使用注意.png', type: '饮食保健指导', play: '129952', url: '食药物质相关法律法规及使用注意.html' }
         ]
     };
 
     categoryItems.forEach(item => {
         item.addEventListener('click', function(e) {
             e.preventDefault();
-            const category = this.textContent.trim();
+            const category = this.getAttribute('data-category');
             categoryItems.forEach(i => i.classList.remove('active'));
             this.classList.add('active');
             
